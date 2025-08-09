@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Funciones en JS</title>
+  <link rel="stylesheet" href="..\css\estilos.css">
+</head>
+<body>
+
+<header class="encabezado">
+<nav>
+  <ul class="lista">
+      <li class="elemento"><a href="../pag_principal/index.html">Inicio</a></li>
+      <li class="elemento"><a href="../funciones/funciones.html">Funciones</a></li>
+      <li class="elemento"><a href="../Funcion_Flecha/Funcion_Flecha.html">Función flecha</a></li>
+      <li class="elemento"><a href="../callback/callback.html">Callback</a></li>
+      <li class="elemento"><a href="../Promesas/promesas.html">Promesas</a></li>
+  </ul>
+
+    </nav>
+</header>
+  <!-- Ejercicio 1: Saludar con nombre ingresado -->
+  <section>
+    <form action="">
+      <h3>Saludar 👋🏽</h3>
+      <label for="miInput">Nombre:</label>
+      <input type="text" id="miInput" placeholder="Ingresar nombre..." required />
+      <button type="button" id="miBoton" onclick="saludar()">Mostrar Resultado</button>
+      <p id="resultado"></p>
+    </form>
+  </section>
+
+  <!-- Ejercicio 2: Sumar dos números -->
+  <section>
+    <form action="">
+      <h3>Sumar 🧮</h3>
+      <label for="n1">Número:</label>
+      <input type="number" id="n1" placeholder="Ingrese un número" required />
+
+      <label for="n2">Número:</label>
+      <input type="number" id="n2" placeholder="Ingrese otro número" required />
+
+      <button type="button" id="botonSumar">Sumar</button>
+      <p id="resultadoSuma"></p>
+    </form>
+  </section>
+
+  <!-- Ejercicio 3: Calcular total de una venta -->
+  <section>
+    <form action="">
+      <h3>Calcular Venta 💸</h3>
+
+      <label for="producto">Nombre del producto:</label>
+      <input type="text" id="producto" placeholder="Nombre del producto" required />
+
+      <label for="cantidad">Cantidad:</label>
+      <input type="number" id="cantidad" placeholder="Cantidad" required />
+
+      <label for="precio">Precio:</label>
+      <input type="number" id="precio" placeholder="Precio" required />
+
+      <label for="resultado_Compra">Total a pagar:</label>
+      <input type="text" id="resultado_Compra" placeholder="Total a pagar:" disabled />
+
+      <button type="button" id="botonCompra">Calcular Venta</button>
+    </form>
+  </section>
+
+  <footer class="pie-pagina">
+    <div class="footer-content">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="pag_principal/index.html">Inicio</a></li>
+                    <li><a href="C:\Users\Maria\Documents\tercer trimestre\Javascript3\repaso JS\funciones\funciones.html">Funciones</a></li>
+                    <li><a href="C:\Users\Maria\Documents\tercer trimestre\Javascript3\repaso JS\Funcion_Flecha\Funcion_Flecha.html">Función Flecha</a></li>
+                    <li><a href="C:\Users\Maria\Documents\tercer trimestre\Javascript3\repaso JS\callback\callback.html">Callbacks</a></li>
+                    <li><a href="C:\Users\Maria\Documents\tercer trimestre\Javascript3\repaso JS\Promesas\promesas.html">Promesas</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <div class="footer-contact">📧 zapatanicol499@gmail.com</div>
+                <div class="footer-contact">📱 +57 301 423 0259</div>
+                <div class="footer-contact">📍 Medellín, Colombia</div>
+            </div>
+        </div>
+        
+        <div class="footer-divider"></div>
+
+    
+    <div class="redes">
+
+        <a href="https://www.facebook.com/nicol.zapata.967952" target="_blank" class="facebook">
+            <i class="fab fa-facebook-f"></i> Facebook
+        </a>
+        <a href="https://www.instagram.com/nicol_zapataaa?igsh=MTR3dzBxMnZnZDBpMQ==" target="_blank" class="instagram">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+    </div>
+</footer>
+        
+        <div class="footer-copyright">
+            © 2025 JavaScript Tutorial. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+  <!-- Script JS -->
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JavaScript - Página Principal</title>
+  <link rel="stylesheet" href="..\css\estilos.css">
+</head>
+<body>
+
+<header class="encabezado">
+<nav>
+<ul class="lista">
+    <li class="elemento"><a href="../pag_principal/index.html">Inicio</a></li>
+    <li class="elemento"><a href="../funciones/funciones.html">Funciones</a></li>
+    <li class="elemento"><a href="../Funcion_Flecha/Funcion_Flecha.html">Función flecha</a></li>
+    <li class="elemento"><a href="../callback/callback.html">Callback</a></li>
+    <li class="elemento"><a href="../Promesas/promesas.html">Promesas</a></li>
+</ul>
+
+    </nav>
+</header>
+
+  <div>
+    <h1>Introducción a JavaScript</h1>
+    <p>Funciones, Función flecha, Callbacks y Promesas</p>
+  </div>
+    
+  <div class="container">
+
+    <section id="funciones">
+      <h2>Funciones</h2>
+      <p>Las <strong>funciones</strong> son bloques de código reutilizables que realizan una tarea específica. Se pueden definir una vez y ejecutar varias veces.</p>
+      <pre class="codigo"><code>function saludar(nombre) {
+       return `Hola, ${nombre}!`;}</code></pre>
+    </section>
+
+    <section id="arrow">
+      <h2>Funciones Flecha</h2>
+      <p>Las <strong>funciones flecha</strong> (arrow functions) son una forma más corta y moderna de escribir funciones en JavaScript.</p>
+      <pre class="codigo"><code>const saludar = (nombre) => `Hola, ${nombre}!`;</code></pre>
+    </section>
+
+    <section id="callback">
+      <h2>Callbacks</h2>
+      <p>Un <strong>callback</strong> es una función que se pasa como argumento a otra y se ejecuta después de que esta termina.</p>
+      <pre class="codigo"><code>function procesarUsuario(nombre, callback) {
+        console.log("Procesando...");
+        callback(nombre);
+        }
+
+        procesarUsuario("Ana", (nombre) => {
+        console.log(`Bienvenida, ${nombre}`);
+        });</code></pre>
+    </section>
+
+    <section id="promesas">
+      <h2>Promesas</h2>
+      <p>Las <strong>promesas</strong> permiten manejar operaciones asincrónicas de forma más clara y controlada usando <code>.then()</code> y <code>.catch()</code>.</p>
+      <pre class="codigo"><code>const obtenerDatos = () => {
+        return new Promise((resolve, reject) => {
+        setTimeout(() => {
+        resolve("Datos obtenidos");
+            }, 2000);
+        });
+    };
+
+obtenerDatos()
+  .then((respuesta) => console.log(respuesta))
+  .catch((error) => console.error(error));</code></pre>
+    </section>
+
+  </div>
+ 
+  <footer class="pie-pagina">
+    <div class="footer-content">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="pag_principal/index.html">Inicio</a></li>
+                    <li><a href="C:\Users\Maria\Documents\tercer trimestre\Javascript3\repaso JS\funciones\funciones.html">Funciones</a></li>
+                    <li><a href="C:\Users\Maria\Documents\tercer trimestre\Javascript3\repaso JS\Funcion_Flecha\Funcion_Flecha.html">Función Flecha</a></li>
+                    <li><a href="C:\Users\Maria\Documents\tercer trimestre\Javascript3\repaso JS\callback\callback.html">Callbacks</a></li>
+                    <li><a href="C:\Users\Maria\Documents\tercer trimestre\Javascript3\repaso JS\Promesas\promesas.html">Promesas</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <div class="footer-contact">📧 zapatanicol499@gmail.com</div>
+                <div class="footer-contact">📱 +57 301 423 0259</div>
+                <div class="footer-contact">📍 Medellín, Colombia</div>
+            </div>
+        </div>
+        
+        <div class="footer-divider"></div>
+
+    
+    <div class="redes">
+
+        <a href="https://www.facebook.com/nicol.zapata.967952" target="_blank" class="facebook">
+            <i class="fab fa-facebook-f"></i> Facebook
+        </a>
+        <a href="https://www.instagram.com/nicol_zapataaa?igsh=MTR3dzBxMnZnZDBpMQ==" target="_blank" class="instagram">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+    </div>
+</footer>
+        
+        <div class="footer-copyright">
+            © 2025 JavaScript Tutorial. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+</body>
+</html>
